@@ -1,0 +1,20 @@
+{%  extends 'data/base.html' %}
+
+{% block content %}
+
+<p></p>
+<h5>{{month}}/{{day}}/{{year}}</h5>
+<hr>
+<form method='post' action="" style="text-align: center;">
+    {% csrf_token %}
+    {{ form }}
+    <button class= 'btn btn-primary'>Enter</button>
+</form>
+
+<hr>
+<h1 style = "text-align:center; font-family: 'Ariel'">{{ country }}</h1>
+<hr>
+
+{%  include 'data/card.html' %}
+
+{% endblock %}
