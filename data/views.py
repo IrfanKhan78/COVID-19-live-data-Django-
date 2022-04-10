@@ -8,7 +8,6 @@ from datetime import date
 
 def data_view(request):    
 
-
     url = "https://covid-193.p.rapidapi.com/statistics"
 
     headers = {
