@@ -1,4 +1,123 @@
-<br>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+<div class="row">
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-white bg-info mb-3" id="total-orders" style="text-align: center;">
+			  	<div class="card-header">
+			  		<h5 class="card-title" style="font-weight: bolder;">Population</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{population}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-white bg-dark mb-3" id="orders-delivered" style="text-align: center;">
+			  	<div class="card-header">
+			  		<h5 class="card-title" style="font-weight: bolder;">Total Cases</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{total}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-white bg-secondary mb-3" id="orders-pending" style="text-align: center;">
+			  	<div class="card-header" style="font-weight: bolder;">
+			  		<h5 class="card-title" style="font-weight: bolder;">New Cases</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{new}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="w-100"></div>
+	
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-white bg-warning mb-3" id="orders-pending" style="text-align: center;">
+			  	<div class="card-header">
+			  		<h5 class="card-title" style="font-weight: bolder;">Critical Cases</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{critical}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-white bg-success mb-3" id="orders-pending" style="text-align: center;">
+			  	<div class="card-header">
+			  		<h5 class="card-title" style="font-weight: bolder;">Recovered</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{recovered}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-white bg-danger mb-3" id="orders-pending" style="text-align: center;">
+			  	<div class="card-header">
+			  		<h5 class="card-title" style="font-weight: bolder;">Deaths</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{deaths}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <br>
 
 <div class="row">
 	<div class="col">
@@ -80,4 +199,47 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
+
+<!-- <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+	<div class="card-header">Population</div>
+	<div class="card-body">
+	  <h5 class="card-title"></h5>
+	  <p class="card-text">{{population}}</p>
+	</div>
+  </div>
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+	<div class="card-header">Total Cases</div>
+	<div class="card-body">
+	  <h5 class="card-title"></h5>
+	  <p class="card-text">{{ total }}</p>
+	</div>
+  </div>
+  <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+	<div class="card-header">New Cases</div>
+	<div class="card-body">
+	  <h5 class="card-title"></h5>
+	  <p class="card-text">{{ new }}</p>
+	</div>
+  </div>
+  <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+	<div class="card-header">Critical Cases</div>
+	<div class="card-body">
+	  <h5 class="card-title"></h5>
+	  <p class="card-text">{{ critical }}</p>
+	</div>
+  </div>
+  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+	<div class="card-header">Recovered</div>
+	<div class="card-body">
+	  <h5 class="card-title"></h5>
+	  <p class="card-text">{{ recovered }}</p>
+	</div>
+  </div>
+  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+	<div class="card-header">Deaths</div>
+	<div class="card-body">
+	  <h5 class="card-title"></h5>
+	  <p class="card-text">{{ deaths }}</p>
+	</div>
+  </div> -->
