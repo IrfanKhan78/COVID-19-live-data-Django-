@@ -6,4 +6,4 @@ This is a simple website which displays live COVID-19 data for the country selec
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/Luu6K4iNsX.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/2XFDVpYG7r.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
